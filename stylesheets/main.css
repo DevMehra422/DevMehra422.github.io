@@ -2,3 +2,6 @@ body{
     font-family:'Segoe UI';
     font-size: 18px
 }
+header, footer{
+    background-color:#BCD2EE;
+}
