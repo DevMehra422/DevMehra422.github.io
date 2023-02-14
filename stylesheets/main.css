@@ -20,3 +20,6 @@ ol :nth-child(odd) {
 nav ul{
     list-style-type: none;
 }
+nav a{
+    text-decoration: none;
+}
