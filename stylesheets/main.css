@@ -25,3 +25,6 @@ nav a{
     background-color:#F9EA9A;
     border: 1px solid black ;
 }
+nav a:hover{
+    background-color: #40BCD8;
+}
