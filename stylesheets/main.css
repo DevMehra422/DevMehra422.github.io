@@ -17,3 +17,6 @@ ol{
 ol :nth-child(odd) {
     background-color: #FC9E4F;
 }
+nav ul{
+    list-style-type: none;
+}
