@@ -14,3 +14,6 @@ header, footer{
 ol{
     list-style-type: square;
 }
+ol :nth-child(odd) {
+    background-color: #FC9E4F;
+}
