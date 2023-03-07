@@ -69,3 +69,12 @@ nav ul li{
   .story::after {
     right: 0;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    padding: 10px 0;
+  }
