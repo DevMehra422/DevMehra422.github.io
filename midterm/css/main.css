@@ -1,3 +1,4 @@
+ /* it is used to defeat the box model,it can be considered as a strap to tighten the box model.It does not exceed the original width and height which was given in the starting.*/
 *{
     box-sizing: border-box;
 }
@@ -6,6 +7,7 @@ body{
     background-color: #aad4cf;
 }
 
+/* it wraps content inside it and gives more definition to the overall webpage*/
 .wrapper{
     margin:200px auto;
     width: 1024px;
@@ -13,19 +15,22 @@ body{
     background-color: #d4e9e7;
 }
 
+/* it sets the position and text alignment of the header element to center which in our case is the wide starfish image */
 header{
     position: relative;
     text-align: center;
 }
-
+/* it is used to customize and transform the heading(Alone Starfish) to the centre*/
 header h1 {
     font-weight: normal;
     color: #ffffff;
     font-size: 55px;
     position: absolute;
+    /* This sets position of the h1 element within the header element. It also centers the element horizontally and vertically. */ 
     top: 60%;
     left: 50%;
     transform: translate(-50%, -65%);
+     /* Z index is used to drag the layer in the z-axis, The higher the z-index value, the higher it will be placed in the layers panel. */
     z-index: 3;  
 }
 
@@ -37,12 +42,14 @@ nav{
     padding:0px;
 }
 
+/* removes the dotted style from infront of the unordered list and adds 0 margin and */
 nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 } 
+
+
 nav ul li{
     float: left;
     width: 33.33%;
@@ -52,6 +59,7 @@ nav ul li{
     
 }
 
+/* Adds vertical black bars before and after the story link in the nav bar */
 .story::before,
 .story::after {
   content: "";
@@ -62,6 +70,7 @@ nav ul li{
   background-color: black;
 }
 
+/* I used it to manipulate the distance of the black vertical bars before and after from the story link. */
 .story::before {
     left: 0;
   }
@@ -70,6 +79,7 @@ nav ul li{
     right: 0;
   }
 
+  /* used to stylize the links in the navigation bar*/
   a {
     text-decoration: none;
     color: black;
@@ -79,37 +89,45 @@ nav ul li{
     padding: 10px 0;
   }
 
-  h2{
-    font-size: 31px;
-    font-weight: 600;
+  /* It sets the font thickness of h2 inside the article element*/
+  article h2{
+    font-size: 28px;
+    font-weight: 550;
+    margin-top: 70px;
+    margin-bottom: 10px;
   }
 
+  /* It floats the image to the left so that the paragraph can wrap around it */
   main article img{
      
     float: left;
-    width: 20%;
+    width: 21%;
     margin-right: 15px;
     margin-bottom: 15px;
 }
-
-.p-float{
+  /* It is always required to clear float after using to avoid overlapping */
+  .p-float{
     clear: left;
-}
+  }
+
+/* It gives the form a black border around it with some padding for the content inside the form */
 form{
     border: 1px solid black;
      padding: 25px;
  }
 
+ /* I made class of .form-group for all text fields to give margin after them */
  .form-group {
     margin-bottom: 10px;
   }
   
+ /* It sets font weight and margins for the labels above the text*/
  .form-group label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
   }
-
+/* This targets the input types directly and customizes them */
   input[type="text"],input[type="email"]
       {
         width: 100%;
@@ -117,7 +135,7 @@ form{
         border: solid 1px #ccc;
         resize: vertical;
       }
-
+      /* It sets and expands the "your message" text box vertically */
       .message{
         width: 300px;
         height: 150px;
@@ -125,13 +143,14 @@ form{
         background-color: #f9f9f9;
         padding: 10px;
       }
-
+      /* It stylizes the submit button on the bottom of the form*/
       .submit{
         margin-top:15px ;
         padding: 10px;
        background-color:#d4e9e7;
     }
 
+    /* It aligns the footer to the right with some padding*/
      footer {
       text-align: right;
       padding: 11px;
