@@ -28,3 +28,7 @@ header h1 {
     transform: translate(-50%, -65%);
     z-index: 3;  
 }
+
+main{
+    margin: 20px;
+}
