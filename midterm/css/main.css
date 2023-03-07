@@ -5,3 +5,10 @@
 body{
     background-color: #aad4cf;
 }
+
+.wrapper{
+    margin:200px auto;
+    width: 1024px;
+    height: 45%;
+    background-color: #d4e9e7;
+}
