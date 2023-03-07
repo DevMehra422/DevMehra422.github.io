@@ -12,3 +12,8 @@ body{
     height: 45%;
     background-color: #d4e9e7;
 }
+
+header{
+    position: relative;
+    text-align: center;
+}
