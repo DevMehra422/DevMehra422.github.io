@@ -95,3 +95,7 @@ nav ul li{
 .p-float{
     clear: left;
 }
+form{
+    border: 1px solid black;
+     padding: 25px;
+ }
