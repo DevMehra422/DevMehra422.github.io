@@ -78,3 +78,8 @@ nav ul li{
     display: block;
     padding: 10px 0;
   }
+
+  h2{
+    font-size: 31px;
+    font-weight: 600;
+  }
