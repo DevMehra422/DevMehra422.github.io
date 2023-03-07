@@ -51,3 +51,21 @@ nav ul li{
     font-weight: normal;
     
 }
+
+.story::before,
+.story::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: black;
+}
+
+.story::before {
+    left: 0;
+  }
+  
+  .story::after {
+    right: 0;
+  }
