@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Three Star Media</title>
+    <script src="https://kit.fontawesome.com/c51741d84b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- it creates a blank content box which gives more definition to the overall webpage , Wraps the entire page into predefined dimensions -->
     <div class="wrapper">
         <header> 
-                  <nav>
-                    <div class="home-wrapper">
-                    <img src="images/logo.png" alt="star-logo">
+                  <nav>                              
+            <!-- Adds image with alternative name which can be used by the browser if the image does't load --> 
+                 <div class="logo"><img src="images/logo.png" alt="star-logo"></div>               
                 <ul>
-                <li><a href="#">Home</a></li>
-            </div>
+                               <!-- Creates unordered list with placeholder links for the navigation bar -->
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>    
                 <li><a href="#">Team</a></li>    
                 <li><a href="#">Contact</a></li>    
                 </ul>
-                <form>
-                    <input type="text" placeholder="Search">
-                </form>
+                <!-- embedded search icon for the search bar-->
+                    <input type="text" placeholder="Search"> <i class="fa-solid fa-magnifying-glass"></i>
             </nav>
         </header>
   
@@ -37,9 +37,10 @@
             </div>
 
             <div class="about-us">
+                <!-- Used second div as a wrapper to control the bleed in the background for the content and repeated for 7 more sections-->
                 <div class="wrapper-about-us">  
                     <img src="images/about-us.jpg" alt="about-us">
-                    <h1>About Us</h1>
+                    <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero unde repellendus exercitationem
                     asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint
                     presentium laboriosam perferendis eius amet ad?
@@ -51,12 +52,15 @@
                 </div>
             </div>
 
+            <!-- Merged all the services offered by the three star media into one big section-->
+            <section class="our-services">
+                
             <div class="digital">
-                <h1>Our Services</h1>
+                <h2>Our Services</h2>
                 <div class="wrapper-digital">
                     <img src="images/digital.jpg" alt="digital">
                     <h3>Digital Transformation</h3>
-                        Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
+                       <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
                         corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
                         exercitationem?</p>
                         <button class="button-digital-transformation">Digital Plans ▶</button>
@@ -66,8 +70,8 @@
             <div class="marketing">
                 <div class="wrapper-marketing">
                     <img src="images/marketing.jpg" alt="marketing">
-                    <h3>Marketing</h3>
-                        Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
+                    <h2>Marketing</h2>
+                    <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
                         corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
                         exercitationem?</p>
                         <button class="button-marketing">Marketing ▶</button>
@@ -77,8 +81,8 @@
             <div class="video-production">
                 <div class="wrapper-video-production">
                     <img src="images/video.jpg" alt="video-production">
-                    <h2>Video Production</h2>
-                        Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
+                    <h3>Video Production</h3>
+                    <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
                         corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
                         exercitationem?</p>
                         <button class="button-video-production">Video Plans ▶</button>
@@ -88,8 +92,8 @@
             <div class="web-development">
                 <div class="wrapper-web-development">
                     <img src="images/web.jpg" alt="web-development">
-                    <h2>Web Development</h2>
-                        Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
                         corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
                         exercitationem?</p>
                         <button class="button-video-production">Web Plans ▶</button>
@@ -100,12 +104,14 @@
                 <div class="wrapper-print">
                     <img src="images/print.jpg" alt="print">
                     <h3>Print</h3>
-                        Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
+                    <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
                         corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
                         exercitationem?</p>
                         <button class="button-print">Print Plans ▶</button>
                 </div>
             </div>
+        </section>
+
             <div class="our-vision">
                 <div class="wrapper-our-vision">
                     <img src="images/vision.jpg" alt="vision">
@@ -120,7 +126,8 @@
 
             <section class="our-team">
             <div class="team-member-one">
-                <h1>Our Team</h1>
+                <h2>Our Team</h2>
+                <!-- Created a class of our-team with wrapper and two other classes for members so that can easily be stylized -->
                 <div class="wrapper-our-team">
                     <img src="images/john.jpg" alt="team-member-one">
                     <h2>John Doe</h2>
@@ -146,10 +153,11 @@
                 </section>
 
                 <section class="contact-us">
-                    <h1>Contact-Us</h1>
+                    <h2>Contact-Us</h2>
                    <form>
                     <h2>Send us a message</h2>
                     
+                     <!-- Creates class of form-group to enclose the form-->
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <br>
@@ -163,9 +171,10 @@
                         </div>
                        
                         <div class="form-group">   
-                            <label for="message">Message</label>
+                            <label for="message">message</label>
                             <br>
-                            <textarea rows="5" cols="60" name="message" ></textarea>
+                            <!-- Used text area with predefined rows and columns-->
+                            <textarea rows="5" cols="60" name="message" id="message"></textarea>
                         </div> 
                         <input class="submit" type="submit">
                 </form>
@@ -176,6 +185,7 @@
                     <h2>Hours of operation</h2>
 
                     <table>
+                        <!-- Gave class to the table headings to later change the color -->
                         <tr class="table-heading">
                             <th>Days</th>
                             <th>Hours</th>
@@ -194,7 +204,7 @@
                 <section class="location-map">
 
                     <h2>Location</h2>
-
+                    <!-- Used google maps to embed a medium size map inside the page -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.826071684536!2d-75.76455660732584!3d45.34969000169437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680707052335!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </section>
@@ -202,8 +212,8 @@
                
         </main>
 
-        <footer>
-            <p>© Copyright Three Media, 2023</p>
+        <footer>           
+            <p>© Copyright Three Star Media, 2023</p>
             <p>ALl images are taken from <a href="#">Unsplash</a> </p>
         </footer>
 
