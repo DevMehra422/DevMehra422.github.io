@@ -233,7 +233,7 @@ h3{
     margin: 10px;
 }
 
-.img-video_production{
+.img-video-production{
     width: 100%;
 }
 
@@ -294,17 +294,8 @@ h3{
     width: 100%;
     height: 300px;
     }
-/* 
-    .wrapper-our-vision{
-        position: relative;
-        color: white;
-        padding-left: 20px;
-        bottom: 200px;
-        line-height: 30px;
-    } */
 
     .button-our-vision{
-
     background-color: #162a43;
     color: white;
     border: 10px solid red ;
