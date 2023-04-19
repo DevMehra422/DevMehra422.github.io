@@ -18,27 +18,27 @@
                   <nav>                              
             <!-- Adds image with alternative name which can be used by the browser if the image does't load --> 
                  <div class="logo"><img src="images/logo.png" alt="star-logo">              
-                <ul>
-                               <!-- Creates unordered list with placeholder links for the navigation bar -->
-                <li id="home-button">Home</a></li>  
-                </ul>  
-            </div>   
-        <ul class="sub-nav">       
-                <li>About Us</a></li>
-                <li>Services</a></li>    
-                <li>Team</a></li>    
-                <li>Contact</a></li>    
-                </ul>
+               
+                 </div>
+                 <ul class="main-nav">
+                   <li id="home-button">Home</li>
+                 </ul>
+                 <ul class="sub-nav">
+                   <li>About Us</li>
+                   <li>Services</li>
+                   <li>Team</li>
+                   <li>Contact</li>
+                 </ul>
                
                 <!-- embedded search icon for the search bar-->
-                   
-                    <input type="text" id ="searchbar"  placeholder="search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i> 
-
+                <div class="search-container">       
+                    <input type="text" id ="searchbar"  placeholder="Search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i> 
+                </div>
                 
                 </nav>
         </header>
   
-        <main>
+        <>
             <div class="main-banner">
                 <img class="main-banner-img " src="images/main-banner.jpg" alt="main">
                 <div class="main-banner-wrapper">
@@ -50,9 +50,10 @@
 
             <div class="about-us">
                 <!-- Used second div as a wrapper to control the bleed in the background for the content and repeated for 7 more sections-->
+                <img id="about-us-img" src="images/about-us.jpg" alt="about-us">
                 <div class="wrapper-about-us">  
-                    <img id="about-us-img" src="images/about-us.jpg" alt="about-us">
-                    <h2>About Us</h2>
+                   
+                    <h2 id="about-us-heading">About Us</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero unde repellendus exercitationem
                     asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint
                     presentium laboriosam perferendis eius amet ad?
@@ -65,10 +66,11 @@
             </div>
 
             <!-- Merged all the services offered by the three star media into one big section-->
+            <h2 id="our-services-heading">Our Services</h2>
+
             <section class="our-services">
-                
             <div class="digital">
-                <h2>Our Services</h2>
+               
                 <div class="wrapper-digital">
                     <img class="digital-img" src="images/digital.jpg" alt="digital">
                     <h3>Digital Transformation</h3>
@@ -127,7 +129,7 @@
             <div class="our-vision">
                 <img class="img-our-vision" src="images/vision.jpg" alt="vision">
                 <div class="wrapper-our-vision">                  
-                    <h2>Our Vision</h2>
+                    <h2 id="our-vision-heading">Our Vision</h2>
                     <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
                         corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
                         exercitationem?</p>
@@ -138,35 +140,37 @@
 
             <section class="our-team">
                 <h2>Our Team</h2>
-            <div class="team-member-one">
-                
-                <!-- Created a class of our-team with wrapper and two other classes for members so that can easily be stylized -->
-                <div class="wrapper-our-team">
-                    <img class="john" src="images/john.jpg" alt="team-member-one">
-                    <h2 id="john-title">John Doe</h2>
-                    <h3 id="john-sub-title">CEO and Co-owner</h3>
-                    <hr>   
-                    <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
-                        corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
-                        exercitationem?</p>
+                <div class="team-member-one">
+                    <div class="wrapper-our-team wrapper-our-team-left">
+                        <img class="img-john" src="images/john.jpg" alt="team-member-one">
+                        <div class="team-member-text">
+                            <h2 id="john-title">John Doe</h2>
+                            <h3 id="john-sub-title">CEO and Co-owner</h3>
+                            <hr>
+                            <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
+                                corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
+                                exercitationem?</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="team-member-two">  
-                    <img class="img-bob" src="images/bob.jpg" alt="team-member-two">      
-                    <div class="wrapper-our-team">
-                        <h2 id="bob-title">Bob Rite</h2>
-                        <h3 id="bob-sub-title" >CFO and Co-owner</h3>
-                        <hr>        
-                        <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
-                            corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
-                            exercitationem?</p>
-                    </div>                    
-             </div>
-                </section>
-
-                <section class="contact-us">
-                    <h2 id="contact-us">Contact-Us</h2>
+            
+                <div class="team-member-two">
+                    <div class="wrapper-our-team wrapper-our-team-right">
+                        <img class="img-bob" src="images/bob.jpg" alt="team-member-two">
+                        <div class="team-member-text">
+                            <h2 id="bob-title">Bob Rite</h2>
+                            <h3 id="bob-sub-title">CFO and Co-owner</h3>
+                            <hr>
+                            <p>Lorem ipsum dolor it amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi
+                                corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in
+                                exercitationem?</p>
+                        </div>
+                    </div>
+                </div>
+            </section class=info-container>
+            <section>
+                <h2 id="contact-us">Contact-Us</h2>
+                <section class="contact-us"> 
                    <form>
                     <h2 id="msg" >Send us a message</h2>
                     
@@ -221,13 +225,13 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11215.826071684536!2d-75.76455660732584!3d45.34969000169437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680707052335!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </section>
-
+            </section>
                
         </main>
 
         <footer>           
             <p>© Copyright Three Star Media, 2023</p>
-            <p>All images are taken from <a>Unsplash</a> </p>
+            <p>All images are taken from <a href="#">Unsplash</a> </p>
         </footer>
 
 

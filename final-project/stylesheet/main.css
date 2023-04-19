@@ -77,10 +77,10 @@ color: #c78c06;
 
 #searchbar
 {
-    font-size: medium;
+    font-size: 25px;
     font-style: bold;
-    height: 30px;
-    width: 90%;
+    height: 15px;
+    width: 80%;
 }
 
 .fa-magnifying-glass{
@@ -286,7 +286,7 @@ h3{
 .img-print{
     width: 100%;
 }
-    .our-vision{
+    /* .our-vision{
         position: relative;
     }
 
@@ -304,7 +304,53 @@ h3{
     margin-top: 10px;
     border:none;
     margin: 10px;
+    } */
+
+    .our-vision {
+        position: relative;
     }
+    
+    .img-our-vision{
+        object-fit: cover;
+        width: 100%;
+        height:300px;
+        }
+
+    #our-vision-heading{
+        margin-bottom: 20px;
+    }
+    .wrapper-our-vision {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as desired */
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .button-our-vision {
+        background-color: #122740;
+        color: #fff;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 10px 20px;
+        width: 20%;
+        height: 80px;
+        border: 1px solid #c78c06;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+
 
     .our-team{
        margin: auto;
@@ -317,7 +363,7 @@ h3{
     }
 
     .img-john{
-    width: 100%;
+    width: 760px;
     }
 
     #john-title{
@@ -337,7 +383,7 @@ h3{
 
     hr { 
         width:100%; 
-        height:3px; 
+        height:2px; 
         background-color: #c78c06; 
         border: none;
     }
@@ -350,13 +396,13 @@ h3{
         margin-top: 10px;
      text-align: left;
      background-color: #ffe6ac;
- 
      }
  
      .img-bob{
-     width: 100%;
+        width: 760px;
      }
- 
+     
+
      #bob-title{
          margin-top: 5px;
          margin-left:5px;
@@ -461,3 +507,210 @@ h3{
             line-height: 40px;
         }
        
+        @media screen and (min-width: 760px){
+
+            .wrapper{
+                margin: auto;
+                max-width:1200px;
+                width:100% ;
+            }
+            body{
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                background-color: #222;
+              }
+              
+              .logo {
+                display: flex;
+                align-items: center;
+              }
+              
+              ul {
+                display: flex;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+              }
+              
+              ul li {
+                margin: 0 10px;
+              }
+              
+              .search-container {
+                display: flex;
+                align-items: center;
+                width: 100%;
+               
+                    flex-grow: 1; /* Add this line to extend the search bar */
+                    margin-left: 20px; /* Add this line to separate the search bar from the menu */
+                    padding: 5px; /* Add this line for better appearance */
+                  
+              }
+              
+              #home-button{
+                
+                display: flex; /* Add this line to use Flexbox */
+                justify-content: center;
+                align-items: center; /* Add this line to center the text vertically */
+                  height: 70px;
+                width: 140px; 
+                
+              }
+
+              .video-production{
+                margin-bottom: none;
+              }
+              .web-development{
+                margin-bottom: none;
+              }
+              .print{
+                margin-bottom: none;
+              }
+              .our-services{
+                margin-bottom: none;
+              }
+
+              .about-us {
+                padding-left: 100px;
+                padding-right: 100px;
+                display: flex;
+                align-items: center;
+                height: 400px;
+                width: 1300px;
+              }
+              
+              .wrapper-about-us {
+                margin-left: 20px;
+                line-height: 20px;
+              }
+              
+              #about-us-img{
+                height: 350px;
+                padding: 10px;
+                
+              }
+
+              #about-us-heading{
+                margin-bottom: 50px;
+                font-weight: bolder;
+                font-size: 60px;
+              }      
+
+
+              #our-services-heading{
+                font-size: 60px;
+                margin-top: 50px;
+               margin-bottom:30px;
+              }
+
+
+
+
+              .digital{grid-area: digital;}
+              .marketing{grid-area: marketing;}
+              .video-production{grid-area:video;}
+              .web-development{grid-area:web;}
+              .print{grid-area:print;}
+
+              .our-services{
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                grid-gap: 10px;
+                grid-template-areas:
+                    "digital digital digital marketing marketing marketing"
+                    "digital digital digital marketing marketing marketing"
+                    "digital digital digital marketing marketing marketing"
+                    "video video web web print print"
+                    "video video web web print print"
+                    "video video web web print print";
+                   
+            }
+            .our-team {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px; /* Adjust the gap between team members */
+            }
+            
+            .wrapper-our-team {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .wrapper-our-team-left .team-member-text {
+                order: 1;
+            }
+            
+            .wrapper-our-team-right {
+                flex-direction: row-reverse;
+              margin-left:0;
+            }
+            
+            .team-member-text {
+                max-width: 50%;
+            }
+            
+            .team-member-text h2,
+            .team-member-text h3 {
+                margin: 0;
+            }
+            
+            .team-member-text hr {
+                width: 90%;
+                border: none;
+                margin: 10px 0;
+            }
+            
+            .img-john,
+            .img-bob {
+                width: 100%;
+                max-width: 300px; /* Adjust the image width */
+                height: auto;
+                object-fit: cover;
+            }
+            
+            
+            
+          
+
+            .info-container {
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                grid-gap: 20px;
+                grid-template-areas:
+                  "form form form maps maps maps"
+                  "form form form maps maps maps"
+                  "form form form maps maps maps"
+                  "table table table table table "
+                  "table table table table table "
+                  "table table table table table ";
+              }
+              
+              .contact-us {
+                grid-area: form;
+              }
+              
+              .schedule {
+                grid-area: table;
+              }
+              
+              .location-map {
+                grid-area: maps;
+                grid-row-start: 1;
+                grid-row-end: 7;
+              }
+            
+              footer{
+                padding-left: 100px;
+              }
+          }
