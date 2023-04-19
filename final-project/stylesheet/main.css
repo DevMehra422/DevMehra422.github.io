@@ -45,6 +45,9 @@ table {
 
 /* Project Starting */
 
+.wrapper{
+    margin: 10px;
+}
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -341,7 +344,12 @@ h3{
     font-weight: bold;
     }
 
-    hr { width:100%; height:1px; background: #c78c06 }
+    hr { 
+        width:100%; 
+        height:3px; 
+        background-color: #c78c06; 
+        border: none;
+    }
 
     .our-team{
         margin: auto;
@@ -372,3 +380,54 @@ h3{
      font-size: 15px;
      font-weight: bold;
      }
+
+     #contact-us{
+        margin-top: 40px;
+        font-weight: bolder;
+     }
+
+     #msg{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 30px;
+     }
+
+     form{
+         padding: 0;
+     }
+    
+     /* I made class of form-group for all text fields to give margin after them */
+     .form-group {
+        margin-bottom: 10px;
+      }
+      
+     /* It sets font weight and margins for the labels above the text*/
+     .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    /* This targets the input types directly and customizes them */
+      input[type="text"],input[type="email"]
+          {
+            width: 100%;
+            padding: 10px;
+            border: solid 1px #ccc;
+            resize: vertical;
+          }
+          /* It sets and expands the "your message" text box vertically */
+          .message{
+            width: 300px;
+            height: 150px;
+            font-size: 18px;
+            background-color: #f9f9f9;
+            padding: 10px;
+          }
+          /* It stylizes the submit button on the bottom of the form*/
+          .submit{
+            margin-top:15px ;
+            padding: 10px;
+           background-color:black;
+           color: #c78c06;
+        }
+        
