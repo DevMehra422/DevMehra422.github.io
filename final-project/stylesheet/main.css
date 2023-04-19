@@ -283,33 +283,6 @@ h3{
 .img-print{
     width: 100%;
 }
-
-    /* .our-vision{
-        position: relative;
-        margin-top: 30px;
-      }
-      
-      .wrapper-our-vision{
-        position: absolute;
-        color: white;
-      }
-
-      .img-our-vision{
-        height: 400px;
-        width: 100%;
-      }
-
-      .button-our-vsion{
-        background-color: #222;
-        color: white;
-        
-        height: 60px;
-        width: 150px;
-        margin-top: 10px;
-        border:none;
-        margin: 10px;
-    } */
-    
     .our-vision{
         position: relative;
     }
@@ -318,14 +291,14 @@ h3{
     width: 100%;
     height: 300px;
     }
-
+/* 
     .wrapper-our-vision{
         position: relative;
         color: white;
         padding-left: 20px;
         bottom: 200px;
         line-height: 30px;
-    }
+    } */
 
     .button-our-vision{
 
@@ -338,3 +311,64 @@ h3{
     border:none;
     margin: 10px;
     }
+
+    .our-team{
+       margin: auto;
+    }
+
+    .team-member-one{
+    text-align: left;
+    background-color: #ffe6ac;
+
+    }
+
+    .img-john{
+    width: 100%;
+    }
+
+    #john-title{
+        margin-top: 5px;
+        margin-left:5px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #john-sub-title{
+    margin-top: 5px;
+    margin-left:5px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+    hr { width:100%; height:1px; background: #c78c06 }
+
+    .our-team{
+        margin: auto;
+     }
+ 
+     .team-member-two{
+        margin-top: 10px;
+     text-align: left;
+     background-color: #ffe6ac;
+ 
+     }
+ 
+     .img-bob{
+     width: 100%;
+     }
+ 
+     #bob-title{
+         margin-top: 5px;
+         margin-left:5px;
+         font-size: 30px;
+         font-weight: bold;
+     }
+ 
+     #bob-sub-title{
+     margin-top: 5px;
+     margin-left:5px;
+     margin-bottom: 0;
+     font-size: 15px;
+     font-weight: bold;
+     }
