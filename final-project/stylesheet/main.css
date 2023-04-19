@@ -86,3 +86,36 @@ color: #c78c06;
     padding: 8px;
     width: 20px;
 }
+
+
+.main-banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main-banner-img{
+    width: 100%;
+  }
+  
+  .main-banner-wrapper{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.8;
+  }
+  
+h1{
+    font-size: 90px;  
+}
+
+.button-main-banner{
+margin-right: 500px;
+border: none;
+background-color: #c78c06;
+height: 100px;
+width: 200px;
+}
