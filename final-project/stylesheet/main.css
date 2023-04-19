@@ -78,7 +78,7 @@ color: #c78c06;
 #searchbar
 {
     font-size: 25px;
-    font-style: bold;
+    font-weight: bold;
     height: 15px;
     width: 80%;
 }
@@ -328,7 +328,6 @@ h3{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: left;
         text-align: left;
         background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as desired */
         color: #fff;
@@ -564,16 +563,16 @@ h3{
               }
 
               .video-production{
-                margin-bottom: none;
+                margin-bottom: 0;
               }
               .web-development{
-                margin-bottom: none;
+                margin-bottom: 0;
               }
               .print{
-                margin-bottom: none;
+                margin-bottom: 0;
               }
               .our-services{
-                margin-bottom: none;
+                margin-bottom: 0;
               }
 
               .about-us {
@@ -682,34 +681,20 @@ h3{
           
 
             .info-container {
-                box-sizing: border-box;
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-rows: repeat(6, 1fr);
-                grid-gap: 20px;
-                grid-template-areas:
-                  "form form form maps maps maps"
-                  "form form form maps maps maps"
-                  "form form form maps maps maps"
-                  "table table table table table "
-                  "table table table table table "
-                  "table table table table table ";
-              }
-              
-              .contact-us {
-                grid-area: form;
-              }
-              
-              .schedule {
-                grid-area: table;
-              }
-              
-              .location-map {
-                grid-area: maps;
-                grid-row-start: 1;
-                grid-row-end: 7;
-              }
+                
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 80px;
+                }
             
+             /* it  */
+                .schedule {
+                    grid-row: 2 / 3;
+                    grid-column: span 3;
+                    
+            }
+
+
               footer{
                 padding-left: 100px;
               }
