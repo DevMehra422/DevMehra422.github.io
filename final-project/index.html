@@ -7,6 +7,9 @@
     <title>Three Star Media</title>
     <script src="https://kit.fontawesome.com/c51741d84b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- it creates a blank content box which gives more definition to the overall webpage , Wraps the entire page into predefined dimensions -->
@@ -14,20 +17,24 @@
         <header> 
                   <nav>                              
             <!-- Adds image with alternative name which can be used by the browser if the image does't load --> 
-                 <div class="logo"><img src="images/logo.png" alt="star-logo"></div>               
+                 <div class="logo"><img src="images/logo.png" alt="star-logo">              
                 <ul>
                                <!-- Creates unordered list with placeholder links for the navigation bar -->
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>    
-                <li><a href="#">Team</a></li>    
-                <li><a href="#">Contact</a></li>    
+                <li id="home-button">Home</a></li>  
+                </ul>  
+            </div>   
+        <ul class="sub-nav">       
+                <li>About Us</a></li>
+                <li>Services</a></li>    
+                <li>Team</a></li>    
+                <li>Contact</a></li>    
                 </ul>
                
                 <!-- embedded search icon for the search bar-->
                    
-                <form>
-                    <input type="text" placeholder="Search"> <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
+                    <input type="text" id ="searchbar"  placeholder="Search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i> 
+
+                
                 </nav>
         </header>
   
@@ -224,5 +231,6 @@
 
 
     </div>
+
 </body>
 </html>

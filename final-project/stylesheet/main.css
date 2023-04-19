@@ -42,3 +42,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Project Starting */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+        background-color: #222;
+        padding: 40px;
+        text-align: center;
+    }
+
+.logo{
+    padding: 30px;
+    background-color: #c78c06;
+    text-align: left;
+}
+#home-button{
+background-color: #c78c06;
+color: black;
+text-align: center;
+height: 10px;
+}
+
+.sub-nav li{
+margin: 30px;
+color: #c78c06;
+}
+
+#searchbar
+{
+    font-size: medium;
+    font-style: bold;
+    height: 30px;
+    width: 90%;
+}
+
+.fa-magnifying-glass{
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    padding: 8px;
+    width: 20px;
+}
