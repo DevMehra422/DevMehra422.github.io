@@ -45,31 +45,38 @@ table {
 
 /* Project Starting */
 
+/* Added wrapper to wrap eveerything inside this container,its acts like a belt and tightens everything together */
 .wrapper{
     margin: 10px;
 }
+
+/* font used from google fonts by embedding the link in the head of the html*/
 body{
     font-family: 'Open Sans', sans-serif;
 }
 
+/* container for navigation bar */
 nav{
         background-color: #222;
         padding: 40px;
         text-align: center;
     }
 
+    /* to target the logo of three star media */
 .logo{
     padding: 30px;
     background-color: #c78c06;
     text-align: left;
 }
+
+/*  to make home text look selected */
 #home-button{
 background-color: #c78c06;
 color: black;
 text-align: center;
 height: 10px;
 }
-
+/* to customize and add effects to the sub-nav */
 .sub-nav li{
 margin: 30px;
 color: #c78c06;
@@ -505,7 +512,7 @@ h3{
             color: #c78c06;
             line-height: 40px;
         }
-       
+       /* Media query for screens with a minimum width of 760px */
         @media screen and (min-width: 760px){
 
             .wrapper{
@@ -546,17 +553,17 @@ h3{
                 align-items: center;
                 width: 100%;
                
-                    flex-grow: 1; /* Add this line to extend the search bar */
-                    margin-left: 20px; /* Add this line to separate the search bar from the menu */
-                    padding: 5px; /* Add this line for better appearance */
+                    flex-grow: 1; 
+                    margin-left: 20px; 
+                    padding: 5px; 
                   
               }
               
               #home-button{
                 
-                display: flex; /* Add this line to use Flexbox */
+                display: flex;
                 justify-content: center;
-                align-items: center; /* Add this line to center the text vertically */
+                align-items: center; 
                   height: 70px;
                 width: 140px; 
                 
@@ -635,7 +642,7 @@ h3{
             .our-team {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 20px; /* Adjust the gap between team members */
+                gap: 20px; /* Adjusts the gap between team members */
             }
             
             .wrapper-our-team {
